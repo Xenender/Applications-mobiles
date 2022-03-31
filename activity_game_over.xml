@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game_over">
+
+    <RelativeLayout
+        android:id="@+id/over_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/degrad_red"
+        >
+
+        <RelativeLayout
+            android:id="@+id/over_Layout_score"
+            android:layout_width="210dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/over_circle_image"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/rounded">
+
+            <TextView
+                android:id="@+id/over_score"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="35dp" />
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/over_circle_image"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/snk1_img"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="4dp">
+
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/over_Progress_bar"
+            android:progressDrawable="@drawable/custom_progress_bar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/over_circle_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+        </ProgressBar>
+
+        <ImageView
+            android:id="@+id/over_img_menu"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginBottom="13dp"
+
+            android:src="@drawable/img_menu"
+
+            >
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/over_img_rejouer"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/img_rejouer"
+            >
+
+
+        </ImageView>
+    </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
