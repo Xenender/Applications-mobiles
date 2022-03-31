@@ -1,4 +1,4 @@
-# Applications-mobile
+# Applications-mobiles
 
 
 Le GitHub est separé en deux branches représentant deux applications mobiles :
