@@ -17,6 +17,7 @@ Le GitHub est separé en deux branches représentant deux applications mobiles :
   - La branche "Pile-ou-Face" :
       
       Il s'agit de ma première véritable application, j'ai essayé de reproduire ce jeux culte avec un design moderne et professionnel.
+      Cette application a été publiée sur le Play store au lien suivant : https://play.google.com/store/apps/details?id=com.CoinFlip.pof
       
   - La branche "Piano-Tiles" : 
 
